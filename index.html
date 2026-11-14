@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Social Media Dashboard with Theme Switcher</title>
+  </head>
+  <body>
+    <!-- الخلفية العلوية (Top BG Pattern) -->
+    <div class="top-bg"></div>
+
+    <main class="dashboard">
+      <!-- ===== الهيدر ===== -->
+      <header class="header">
+        <div class="header__text">
+          <h1 class="header__title">Social Media Dashboard</h1>
+          <p class="header__subtitle">Total Followers: 23,004</p>
+        </div>
+
+        <div class="theme">
+          <h3 class="dark__mode">Dark Mode</h3>
+          <label for="themeToggle" class="theme__label"
+            > <input type="checkbox" name="theme" id="themeToggle"
+          /></label>
+        </div>
+      </header>
+
+      <!-- ===== كروت المتابعين الكبيرة ===== -->
+      <section class="followers">
+        <article class="card card--facebook">
+          <div class="card__user">
+            <img
+              class="card__icon"
+              src="./images/icon-facebook.svg"
+              alt="Facebook"
+            />
+            <span class="card__username">@nathanf</span>
+          </div>
+          <p class="card__count">1987</p>
+          <p class="card__label">Followers</p>
+          <p class="card__today card__today--up">
+            <img class="card__arrow" src="./images/icon-up.svg" alt="" />
+            <span>12 Today</span>
+          </p>
+        </article>
+
+        <article class="card card--twitter">
+          <div class="card__user">
+            <img
+              class="card__icon"
+              src="./images/icon-twitter.svg"
+              alt="Twitter"
+            />
+            <span class="card__username">@nathanf</span>
+          </div>
+          <p class="card__count">1044</p>
+          <p class="card__label">Followers</p>
+          <p class="card__today card__today--up">
+            <img class="card__arrow" src="./images/icon-up.svg" alt="" />
+            <span>99 Today</span>
+          </p>
+        </article>
+
+        <article class="card card--instagram">
+          <div class="card__user">
+            <img
+              class="card__icon"
+              src="./images/icon-instagram.svg"
+              alt="Instagram"
+            />
+            <span class="card__username">@realnathanf</span>
+          </div>
+          <p class="card__count">11k</p>
+          <p class="card__label">Followers</p>
+          <p class="card__today card__today--up">
+            <img class="card__arrow" src="./images/icon-up.svg" alt="" />
+            <span>1099 Today</span>
+          </p>
+        </article>
+
+        <article class="card card--youtube">
+          <div class="card__user">
+            <img
+              class="card__icon"
+              src="./images/icon-youtube.svg"
+              alt="YouTube"
+            />
+            <span class="card__username">Nathan F.</span>
+          </div>
+          <p class="card__count">8239</p>
+          <p class="card__label">Subscribers</p>
+          <p class="card__today card__today--down">
+            <img class="card__arrow" src="./images/icon-down.svg" alt="" />
+            <span>144 Today</span>
+          </p>
+        </article>
+      </section>
+
+      <!-- ===== Overview - Today ===== -->
+      <section class="overview">
+        <h2 class="overview__title">Overview - Today</h2>
+
+        <div class="overview__grid">
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Page Views</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-facebook.svg"
+                alt="Facebook"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">87</p>
+              <p class="stat__change stat__change--up">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-up.svg"
+                  alt=""
+                /><span>3%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Likes</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-facebook.svg"
+                alt="Facebook"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">52</p>
+              <p class="stat__change stat__change--down">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-down.svg"
+                  alt=""
+                /><span>2%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Likes</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-instagram.svg"
+                alt="Instagram"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">5462</p>
+              <p class="stat__change stat__change--up">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-up.svg"
+                  alt=""
+                /><span>2257%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Profile Views</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-instagram.svg"
+                alt="Instagram"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">52k</p>
+              <p class="stat__change stat__change--up">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-up.svg"
+                  alt=""
+                /><span>1375%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Retweets</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-twitter.svg"
+                alt="Twitter"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">117</p>
+              <p class="stat__change stat__change--up">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-up.svg"
+                  alt=""
+                /><span>303%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Likes</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-twitter.svg"
+                alt="Twitter"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">507</p>
+              <p class="stat__change stat__change--up">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-up.svg"
+                  alt=""
+                /><span>553%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Likes</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-youtube.svg"
+                alt="YouTube"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">107</p>
+              <p class="stat__change stat__change--down">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-down.svg"
+                  alt=""
+                /><span>19%</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <div class="stat__top">
+              <h3 class="stat__name">Total Views</h3>
+              <img
+                class="stat__icon"
+                src="./images/icon-youtube.svg"
+                alt="YouTube"
+              />
+            </div>
+            <div class="stat__bottom">
+              <p class="stat__value">1407</p>
+              <p class="stat__change stat__change--down">
+                <img
+                  class="stat__arrow"
+                  src="./images/icon-down.svg"
+                  alt=""
+                /><span>12%</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Mohamed Ahmed Helmy</a>.
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
